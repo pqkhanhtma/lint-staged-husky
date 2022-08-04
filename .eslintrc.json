@@ -12,5 +12,9 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react"],
-	"rules": {}
+	"ignorePatterns": ["**/*.test.js", "**/vendor/*.js"],
+	"rules": {
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+	}
 }
